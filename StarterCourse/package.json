@@ -1,0 +1,12 @@
+{
+  "name": "starter-course",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "timesplitter",
+    "develop": "timesplitter-dev"
+  },
+  "dependencies": {
+    "@moonhighway/timesplitter": "^0.0.0",
+    "@moonhighway/timesplitter-dev": "^0.0.0"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@moonhighway/create-timesplitter-course",
+  "version": "0.0.0",
+  "description": "A tool to generate the boilerplate for time",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoonHighway/create-timesplitter-course.git"
+  },
+  "keywords": [
+    "Instructor",
+    "Instructor",
+    "led",
+    "training",
+    "classroom",
+    "materials",
+    "script",
+    "plan"
+  ],
+  "author": "Alex Banks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoonHighway/create-timesplitter-course/issues"
+  },
+  "homepage": "https://github.com/MoonHighway/create-timesplitter-course#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "ncp": "^2.0.0"
+  }
+}

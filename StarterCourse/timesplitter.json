@@ -1,0 +1,49 @@
+{
+  "title": "<YOUR_COURSE_TITLE>",
+  "agenda": [
+    {
+      "title": "Building a Course",
+      "type": "section",
+      "difficulty": "beginner",
+      "required": true,
+      "agenda": [
+        {
+          "title": "Introducing Timesplitter",
+          "required": true,
+          "type": "sample",
+          "difficulty": "beginner",
+          "length": 2
+        },
+        {
+          "title": "Running Timesplitter Dev",
+          "required": false,
+          "type": "exercise",
+          "difficulty": "beginner",
+          "length": 1
+        },
+        {
+          "title": "The Course Source",
+          "required": false,
+          "type": "sample",
+          "difficulty": "intermediate",
+          "length": 1
+        }
+      ]
+    },
+    {
+      "title": "Running a Course",
+      "type": "section",
+      "difficulty": "beginner",
+      "required": true,
+      "agenda": [
+        {
+          "title": "Running the Timesplitter",
+          "required": true,
+          "difficulty": "beginner",
+          "type": "exercise",
+          "length": 1
+        }
+      ]
+    }
+  ]
+}
