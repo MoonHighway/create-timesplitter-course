@@ -31,10 +31,10 @@ if (directoryName.length >= 50) {
 main().catch((error) => console.error("\n\n    ", error.message));
 
 async function main() {
-  const target = path.join(__dirname, directoryName);
-  const source = path.join(__dirname, "_StarterFiles");
-  const pkg = path.join(__dirname, directoryName, "package.json");
-  const content = path.join(__dirname, directoryName, "content.json");
+  const target = path.join(process.cwd(), directoryName);
+  const source = path.join(__dirname, "StarterCourse");
+  const pkg = path.join(process.cwd(), directoryName, "package.json");
+  const content = path.join(process.cwd(), directoryName, "timesplitter.json");
 
   if (fs.existsSync(target)) {
     throw new Error(`The directory ${directoryName} already exists.`);
@@ -43,10 +43,10 @@ async function main() {
   console.log(`
   
   
-  Creating Course Directory...`);
+  Creating Course Directory... 
+  ${target}`);
   await copyDir(source, target);
 
-  console.log(`Modifying JSON Data...`);
   let contentJSON = JSON.parse(await readFile(content));
   let packageJSON = JSON.parse(await readFile(pkg));
 
@@ -56,13 +56,13 @@ async function main() {
   packageJSON = JSON.stringify(packageJSON, null, 2);
   contentJSON = JSON.stringify(contentJSON, null, 2);
 
-  console.log(`Saving JSON Files...`);
+  console.log(`  Saving Config Files...`);
   await Promise.all([
     writeFile(content, contentJSON, "UTF-8"),
     writeFile(pkg, packageJSON, "UTF-8"),
   ]);
 
-  console.log(`Installing Dependencies`);
+  console.log(`  Installing Dependencies`);
   await exec(`cd ${directoryName}; npm i; cd ..;`);
 
   console.log(`
