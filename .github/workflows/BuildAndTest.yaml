@@ -1,14 +1,13 @@
 name: Build and Test
-on: push
-# on:
-#   push:
-#     branches:
-#       - "**"
-#       - "!main"
-#   pull_request:
-#     branches:
-#       - "**"
-#       - "!main"
+on:
+  push:
+    branches:
+      - "**"
+      - "!main"
+  pull_request:
+    branches:
+      - "**"
+      - "!main"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,7 +29,5 @@ jobs:
             ${{ runner.os }}-
       - name: Install Dependencies
         run: npm install
-      - name: Build App
-        run: npm run build
       - name: Run JEST Tests
         run: npm test
