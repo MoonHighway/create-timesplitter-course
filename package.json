@@ -1,6 +1,6 @@
 {
   "name": "@moonhighway/create-timesplitter-course",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "🤖 Everything you need to start creating outstanding instructor led courses for the timesplitter",
   "main": "index.js",
   "bin": {
