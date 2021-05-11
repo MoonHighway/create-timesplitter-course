@@ -7,6 +7,6 @@
   },
   "dependencies": {
     "@moonhighway/timesplitter": "^0.0.4",
-    "@moonhighway/timesplitter-dev": "^0.0.4"
+    "@moonhighway/timesplitter-dev": "^0.0.5"
   }
 }
